@@ -5,6 +5,17 @@ import styles from '@/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
+interface User {
+  name: string
+  age: number
+}
+
+const user =  {
+  name: 'John Doe',
+  age: 30
+} satisfies User;
+
+
 export default function Home() {
   return (
     <>
